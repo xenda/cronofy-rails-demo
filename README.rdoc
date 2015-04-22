@@ -1,0 +1,9 @@
+A simple Cronofy Demo
+
+=====================
+
+This demo showcases a basic Rails integration with the Cronofy api
+by using the Ruby gem. 
+
+It can be run by typing "rails s" in the Terminal and checking out the
+browser view throuh the World icon to the lef.

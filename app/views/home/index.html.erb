@@ -1,0 +1,9 @@
+<h1>Welcome to Cronofy </h1>
+
+<%= link_to "Start using your app now", @cronofy.user_auth_link("https://sauvignon:codepicnic.com:#{ ENV["BASKET_APP_PORT"].to_i + 1 }/oauth2/callback") %>
+
+<% if @calendars %>
+  <% @calendars.each do |calendar| %>
+      <%= calendar["calendar_name"] %>from <%= calendar["profile_name"] %> (<%= calendar["provider_name"] %>)
+  <% end %>
+<% end %>
